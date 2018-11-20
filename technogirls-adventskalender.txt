@@ -1,0 +1,36 @@
+= Technogirls Adventskalender
+
+- kombinieren mit HTML / CSS lernen
+
+- h1
+- p
+- em
+- strong
+- img src
+- a href
+- youtube embed
+- iframe src
+
+- 24 Türchen
+- was als "Türchen" ? z.b. Bebe Fenster, oder Calliope LEDs
+
+- 1 pro Kind
+- Zeige eine Sachen die Du cool findest, mehr überlegen bis zum nächsten Mal
+
+- youtube video
+- rezepte
+- songs
+- strickanleitung
+- geschenke
+- bastelideen
+- coole spiele (brett oder konsole/computer)
+
+struktur:
+
+- advent/index.html
+- advent/1.html
+- advent/format.css
+- 
+
+
+https://www.paperflair.de/images/product_images/popup_images/A-AZ2b-Aufkleber-Zahlen-Adventskalender-Paperflair.jpg
