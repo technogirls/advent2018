@@ -31,9 +31,15 @@
 	</style>
 	<script type="text/javascript">
 		function mm(evt) { document.getElementById('mouse').innerHTML = (evt.screenX - evt.target.offsetLeft) + ',' + (evt.screenY  - evt.target.offsetTop-100); } 
+		function removeDays() {
+            var delta = new Date() - new Date("2018-11-01");
+			delta = delta > 0 ? new Date(delta).getDate() : 0;
+			var map=document.getElementsByName("kalender")[0]
+			Array.from(map.children).forEach(function(c) { if (parseInt(c.getAttribute("title")) > delta) { console.log(c); map.removeChild(c); }});
+		}
 	</script>
 </head>
-<body>
+<body onload="removeDays()">
 	<h1>TechnoGirls Advents Kalender 2018</h1>
 	<div id="mouse">12,12</div>
 	<p>Sucht die Türchen auf dem Bild, es warten täglich neue Überraschungen.</p>
