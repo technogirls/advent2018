@@ -32,7 +32,7 @@
 	<script type="text/javascript">
 		function mm(evt) { document.getElementById('mouse').innerHTML = (evt.screenX - evt.target.offsetLeft) + ',' + (evt.screenY  - evt.target.offsetTop-100); } 
 		function removeDays() {
-            var delta = new Date() - new Date("2018-11-01");
+            var delta = new Date() - new Date("2018-12-01");
 			delta = delta > 0 ? new Date(delta).getDate() : 0;
 			var map=document.getElementsByName("kalender")[0]
 			Array.from(map.children).forEach(function(c) { if (parseInt(c.getAttribute("title")) > delta) { console.log(c); map.removeChild(c); }});
