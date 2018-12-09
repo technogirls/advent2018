@@ -12,21 +12,25 @@
 	body {
 		background-color: #B40404;
 		text-align: center;
+		height: 100%;
 	}
 	h1 {
 		font-size: 2em;		
-	}
-	div#rahmen {
-		width: 100%;
-		height: 70%;
-		text-align:center;
-		vertical-align: middle;
 	}
 	#mouse {
 		display:none;
 	}
 	body, a {
 	  color: white;
+	}
+	#rahmen {
+		text-align:center;
+		vertical-align: middle;
+	}
+	@media (orientation: portrait) { 
+		#bild {
+			transform: translate(-300px,450px) rotate(90deg);
+		}
 	}
 	</style>
 	<script type="text/javascript">
@@ -43,10 +47,13 @@
 	<h1>TechnoGirls Advents Kalender 2018</h1>
 	<div id="mouse">12,12</div>
 	<p>Sucht die Türchen irgendwo auf dem Bild. Der Tag wird angezeigt, wenn man mit der Maus drüberfährt. Es warten täglich neue Überraschungen!</p>
-    <div id="rahmen">
+    <p>
+	Gebaut von den Mädchen der <a href="https://www.technogirls.net">TechnoGirls AG</a>.<br/>
+	Wir haben auch einen <a href="https://www.technogirls.net/vertretungsplan/vp.html">KVP (Klasse-Wochen-Vertretungsplan)</a>.
+    </p>
+	<div id="rahmen">
 	<img id="bild" src="bebe-kalender.jpg" onmousemove="mm(event)" usemap="#kalender"/>
 	<map name="kalender">
-
 	  <area shape="rect" coords="905,452,990,470" href="annalena-1.html" title="1"/>
 	  <area shape="rect" coords="990,40,1070,70" href="saskia-2.html" title="2"/>
 	  <area shape="rect" coords="188,330,205,370" href="michael-3.html" title="3"/>
@@ -56,11 +63,8 @@
 	  <area shape="rect" coords="130,340,170,380" href="michael-7.html" title="7"/>
 	  <area shape="rect" coords="600,50,650,100" href="michael-8.html" title="8"/>
 	  <area shape="rect" coords="280,100,300,120" href="rana-9.html" title="9"/>
+	  <area shape="rect" coords="1360,290,1390,330" href="michael-10.html" title="10"/>
 	</map>
-    </div>
-    <p>
-	Gebaut von den Mädchen der <a href="https://www.technogirls.net">TechnoGirls AG</a>.<br/>
-	Wir haben auch einen <a href="https://www.technogirls.net/vertretungsplan/vp.html">KVP (Klasse-Wochen-Vertretungsplan)</a>.
-    </p>
+	</div>
 </body>	
 </html>
